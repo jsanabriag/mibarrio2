@@ -7,3 +7,4 @@ Crear un repositorio loca
 
 crear un repositorio remoto
 Sincronizar los repositorios 
+configurar user.name y user.email
