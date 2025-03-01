@@ -30,3 +30,23 @@ loadPolygon();
 let btnTrees = document.getElementById('btnTrees');
 
 btnTrees.addEventListener('click', ()=> alert("hola"));
+
+async function loadPolygonArboles(){
+    
+
+    let myData = await fetch('arboles_capellania.geojson')
+    let myPolygonArboles = await myData.json();
+
+    L.geoJSON(myPolygonArboles,
+        {
+            style: { 
+                color: 'blue'
+            }
+        }
+    ).addTo(map);
+
+
+
+}
+loadPolygonArboles();
+
